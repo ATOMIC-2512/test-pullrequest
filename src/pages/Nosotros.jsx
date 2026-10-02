@@ -39,34 +39,48 @@ export default function Nosotros() {
       />
 
       <section className="page-section container about-intro">
-        <div className="about-intro__blob" aria-hidden="true" />
-        <p className="prose">
-          Esencias Naturales nace del deseo de acercar terapias florales de
-          calidad a quienes buscan recuperar su equilibrio emocional.
-          Trabajamos con dos sistemas complementarios: las Flores de Bach, de
-          tradición británica, y los Elíxires Aztecas, inspirados en la
-          sabiduría herbolaria de México.
-        </p>
-        <p className="prose">
-          Cada esencia se elabora con cuidado y pureza, respetando los
-          procesos naturales de extracción para conservar todas sus
-          propiedades.
-        </p>
-        <p className="prose">
-          Creemos que el bienestar emocional no se resuelve con fórmulas
-          genéricas. Por eso, detrás de cada combinación hay tiempo, escucha y
-          una intención clara: acompañarte de forma cercana en tu propio
-          proceso.
-        </p>
+        <div className="about-intro__gallery" aria-label="Fotos de la consulta y ubicación">
+          <img
+            src="https://esencias-naturales.s3.us-east-2.amazonaws.com/Consultorio.jpg"
+            alt="Consultorio de Esencias Naturales"
+            className="about-intro__photo about-intro__photo--large"
+          />
+          <img
+            src="https://esencias-naturales.s3.us-east-2.amazonaws.com/map.png"
+            alt="Mapa de ubicación"
+            className="about-intro__photo"
+          />
+        </div>
 
-        <ul className="value-row mt-lg">
-          {VALUES.map(({ icon: Icon, label }) => (
-            <li key={label}>
-              <Icon size={20} />
-              <span>{label}</span>
-            </li>
-          ))}
-        </ul>
+        <div className="about-intro__content">
+          <p className="prose">
+            Esencias Naturales nace del deseo de acercar terapias florales de
+            calidad a quienes buscan recuperar su equilibrio emocional.
+            Trabajamos con dos sistemas complementarios: las Flores de Bach, de
+            tradición británica, y los Elíxires Aztecas, inspirados en la
+            sabiduría herbolaria de México.
+          </p>
+          <p className="prose">
+            Cada esencia se elabora con cuidado y pureza, respetando los
+            procesos naturales de extracción para conservar todas sus
+            propiedades.
+          </p>
+          <p className="prose">
+            Creemos que el bienestar emocional no se resuelve con fórmulas
+            genéricas. Por eso, detrás de cada combinación hay tiempo, escucha y
+            una intención clara: acompañarte de forma cercana en tu propio
+            proceso.
+          </p>
+
+          <ul className="value-row mt-lg">
+            {VALUES.map(({ icon: Icon, label }) => (
+              <li key={label}>
+                <Icon size={20} />
+                <span>{label}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
 
       <section className="page-section container">
