@@ -145,18 +145,6 @@
   position: relative;
 }
 
-.about-intro__blob {
-  position: absolute;
-  top: -30px;
-  right: -40px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: var(--color-lavender-500);
-  opacity: 0.22;
-  z-index: -1;
-}
-
 .value-row {
   display: flex;
   flex-wrap: wrap;
